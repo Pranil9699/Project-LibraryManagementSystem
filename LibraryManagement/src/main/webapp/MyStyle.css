@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+body {
+	background-color: #87CEFA;
+}
+
+.footer {
+	background: linear-gradient(to right, #f12711, #f5af19);
+	padding: 10px 0;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.footer hr {
+	border-color: #fff;
+}
+
+.footer p {
+	color: #fff;
+}
+
+.navbar-nav li a:hover {
+	color: #ff4d4d !important;
+}
+
+.container {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+h1 {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.card {
+	margin-bottom: 30px;
+}
+
+button.text-center.rounded.rounded-5 {
+	border: none;
+	padding: 0;
+	background: none;
+}
