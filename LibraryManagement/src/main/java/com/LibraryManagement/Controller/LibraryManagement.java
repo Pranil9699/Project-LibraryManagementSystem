@@ -17,20 +17,23 @@ public class LibraryManagement extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		try {
-			User user = new User((long) 1, "PranilTakawane", "Pranil123", "takawanepranil22@gmail.com");
-			User getUser = Service.getUser((long) 1);
-			if(getUser.getId()==1) {
-				
-			}else {
-				Service.saveAdmin(user);	
+			User user = new User((long) 1, "Akanshakadam", "admin", "takawanepranil22@gmail.com");
+			User getUser=null;
+			try {
+				getUser = Service.getUser((long) 1);
+			}catch (Exception e) {
+				// TODO: handle exception
+				e.printStackTrace();
 			}
-			
-			System.out.println("done");
+			if(getUser==null) {
+				Service.saveAdmin(user);
+			}
 			request.getSession().invalidate();
 			RequestDispatcher rs = request.getRequestDispatcher("home.jsp");
 			rs.forward(request, response);
 		} catch (Exception e) {
 			// TODO: handle exception
+			e.printStackTrace();
 		}
 
 	}

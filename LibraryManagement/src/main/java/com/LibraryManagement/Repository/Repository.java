@@ -25,9 +25,8 @@ public class Repository{
 	    tx.commit();
 	    session.close();
 		}catch(Exception e) {
-			//System.out.println("User is Exist");
+			System.out.println(e.getMessage());
 		}
-		System.out.println("sos");
 		return object;
 	}
 
