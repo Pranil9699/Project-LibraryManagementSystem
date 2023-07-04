@@ -6,9 +6,9 @@
 	<hibernate-configuration>
 	<session-factory>
 	<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-	<property name="connection.url">jdbc:mysql://localhost:3306/LibraryManagementSystem</property>
+	<property name="connection.url">mysql://root:ep9vjfAQPT74RnxVzBhE@containers-us-west-105.railway.app:8013/railway</property>
 	<property name="connection.username">root</property>
-	<property name="connection.password">Pranil@2003</property>
+	<property name="connection.password">ep9vjfAQPT74RnxVzBhE</property>
 	<property name="dialect">org.hibernate.dialect.MySQL8Dialect</property> 
 	<!--<property name="hbm2ddl.auto">create</property> Create when you run means Multiple Time Creating the Table-->
 	<property name="hbm2ddl.auto">create</property>  <!--Create Only One Time But used many time -->
